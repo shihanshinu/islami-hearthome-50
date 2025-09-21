@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Islamic Family Life Management App Design System
+   Inspired by Islamic geometric patterns and spiritual colors
+   All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Core Islamic-inspired palette */
+    --background: 30 20% 99%; /* Warm off-white */
+    --foreground: 160 20% 15%; /* Deep forest for text */
+
+    --card: 0 0% 100%; /* Pure white cards */
+    --card-foreground: 160 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 20% 15%;
+
+    /* Islamic emerald green as primary */
+    --primary: 152 55% 40%; /* Rich emerald green */
+    --primary-foreground: 0 0% 100%;
+    --primary-soft: 152 45% 85%; /* Soft emerald for backgrounds */
+
+    /* Sand beige secondary */
+    --secondary: 35 25% 88%; /* Warm sand beige */
+    --secondary-foreground: 160 20% 15%;
+    --secondary-dark: 35 30% 75%; /* Darker sand for contrast */
+
+    /* Sky blue accent */
+    --accent: 200 75% 85%; /* Peaceful sky blue */
+    --accent-foreground: 160 20% 15%;
+    --accent-vivid: 200 85% 60%; /* Brighter blue for highlights */
+
+    /* Muted tones */
+    --muted: 35 15% 93%; /* Very light warm gray */
+    --muted-foreground: 160 10% 45%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 35 20% 90%; /* Soft warm border */
+    --input: 35 25% 94%;
+    --ring: 152 55% 40%; /* Emerald focus ring */
+
+    --radius: 1rem; /* Generous rounded corners */
+
+    /* Islamic-specific colors */
+    --islamic-gold: 45 85% 65%; /* For special highlights */
+    --islamic-gold-soft: 45 75% 90%; /* Soft gold background */
+    --worship-complete: 152 70% 50%; /* Prayer completion */
+    --worship-pending: 35 40% 70%; /* Pending prayers */
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(152 55% 40%), hsl(200 75% 60%));
+    --gradient-soft: linear-gradient(135deg, hsl(152 45% 95%), hsl(200 45% 95%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(35 15% 98%));
+    --gradient-islamic: linear-gradient(135deg, hsl(152 55% 40%), hsl(45 85% 65%));
+
+    /* Shadows for spiritual depth */
+    --shadow-soft: 0 4px 20px -8px hsl(152 55% 40% / 0.15);
+    --shadow-card: 0 8px 30px -12px hsl(152 30% 40% / 0.2);
+    --shadow-worship: 0 0 25px hsl(152 55% 40% / 0.3);
+
+    /* Animation timings */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-gentle: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
